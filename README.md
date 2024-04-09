@@ -23,6 +23,8 @@ To run the application locally, follow these steps:
 - If the answer is correct, your score increases, and a new question is presented.
 - If the answer is incorrect, a wrong-answer sound will play.
 
+## Features
+
 ### Difficulty Levels
 
 - Before starting the challenge, you can select a difficulty level: Easy (5x5), Medium (8x8), or Hard (12x12).
@@ -33,7 +35,7 @@ To run the application locally, follow these steps:
 - Navigate the multiplication table using the `Tab` key to move focus.
 - Press `Enter` to select an answer when in challenge mode.
 
-## Sound Effects
+### Sound Effects
 
 - The application features sound effects for correct and incorrect answers to enhance the interactive experience.
 - Make sure your sound is on to hear the effects when selecting answers.
