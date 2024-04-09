@@ -8,7 +8,7 @@ To run the application locally, follow these steps:
 
 1. Ensure you have `Node.js` and `npm` installed on your machine.
 1. Clone the repository to your local machine.
-1. Navigate to the project directory in your terminal. (Recommended `N` directory)
+1. Navigate to the project directory in your terminal. (Recommended `N/multiplication-table-app` directory)
 1. Run `npm install` to install the required dependencies.
 1. Start the application by running `npm start`.
 1. Open your web browser and go to `http://localhost:3000` to view the application.
