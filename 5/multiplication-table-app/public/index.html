@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplication Table</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            #multiplication-table {
+                border-collapse: collapse;
+                margin: 20px;
+                text-align: center;
+            }
+
+            #multiplication-table th,
+            #multiplication-table td {
+                border: 1px solid black;
+                padding: 8px;
+                background-color: #FFFFFF;
+                /* All cells have white background by default */
+                cursor: pointer;
+                /* Change cursor to pointer on hover over cells */
+            }
+
+            #multiplication-table th {
+                background-color: #FFA500;
+                /* Orange background for headers */
+                font-weight: bold;
+                cursor: default;
+                /* Keep default cursor for header cells */
+            }
+
+            #multiplication-table td.highlighted {
+                background-color: #FFFF00;
+                /* Yellow background for highlighted cell */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="table-container">
+            <!-- The multiplication table will be generated here -->
+        </div>
+
+        <script>
+            // Fetch the multiplication data and generate the table
+            fetch('/api/multiplication')
+                .then(response => response.json())
+                .then(data => generateMultiplicationTable(data))
+                .catch(error => console.error('Error fetching data:', error));
+
+            function generateMultiplicationTable(data) {
+                let table = document.createElement('table');
+                table.id = 'multiplication-table';
+
+                // Insert header row with 'X' and numbers 1-12
+                let headerRow = table.insertRow();
+                let headerCell = headerRow.insertCell();
+                headerCell.textContent = 'X';
+                headerCell.style.backgroundColor = '#FFA500';
+
+                for (let col = 1; col <= 12; col++) {
+                    headerCell = headerRow.insertCell();
+                    headerCell.textContent = col;
+                    headerCell.style.backgroundColor = '#FFA500';
+                }
+
+                // Create each row of the table using the data
+                data.forEach((rowData, rowIndex) => {
+                    let tr = table.insertRow();
+                    let th = tr.insertCell();
+                    th.textContent = rowIndex + 1;
+                    th.style.backgroundColor = '#FFA500';
+
+                    rowData.forEach((cellData, colIndex) => {
+                        let cell = tr.insertCell();
+                        cell.textContent = cellData;
+                        // Add click event to cell
+                        cell.addEventListener('click', function () {
+                            // Log to the console
+                            console.log(`Clicked number: ${cellData}`);
+                            highlightCell(cell);
+                        });
+                    });
+                });
+
+                document.getElementById('table-container').appendChild(table);
+            }
+
+            // Function to highlight a single cell
+            function highlightCell(selectedCell) {
+                // Remove highlight from all cells
+                document.querySelectorAll('#multiplication-table td').forEach(cell => {
+                    cell.classList.remove('highlighted');
+                });
+
+                // Add highlight to the clicked cell
+                selectedCell.classList.add('highlighted');
+            }
+        </script>
+
+    </body>
+
+</html>

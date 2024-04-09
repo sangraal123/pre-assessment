@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #333;
+  min-width: 30px;
+  height: 30px;
+}
+
+.header {
+  background-color: #FFA500;
+  font-weight: bold;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
+td {
+  cursor: pointer;
+}
+
+/* Styles to prevent highlighting on the headers */
+td.header {
+  cursor: default;
+}
+
+td.header:hover {
+  background-color: #FFA500;
+}
