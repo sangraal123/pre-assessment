@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
+import Confetti from 'react-confetti';
 
 const difficulties = {
   easy: 5,  // 5x5 table
@@ -15,6 +16,7 @@ function App() {
   const [timeLeft, setTimeLeft] = useState(30);
   const [isChallengeActive, setIsChallengeActive] = useState(false);
   const [difficulty, setDifficulty] = useState(difficulties.hard);
+  const [confetti, setConfetti] = useState(false);
 
   const correctSound = new Audio('./sounds/correct.mp3');
   const wrongSound = new Audio('./sounds/wrong.mp3');
@@ -46,6 +48,7 @@ function App() {
   const endChallenge = useCallback(() => {
     setIsChallengeActive(false);
     setTestMeMode(false);
+    setConfetti(true)
     alert(`Time's up! Your score is ${score}.`);
     correctSound.pause();
     correctSound.currentTime = 0;
@@ -92,7 +95,7 @@ function App() {
       )}
 
       {!testMeMode && <button onClick={startChallenge}>Start Challenge!</button>}
-
+      {confetti && <Confetti />}
       <table>
         <thead>
           <tr>
