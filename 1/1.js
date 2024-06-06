@@ -26,7 +26,6 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 function assessment1() {
     // 上部ヘッダー行を作成
     var header = __spreadArray(["X"], __read(Array.from(Array(12), function (_, i) { return (i + 1).toString(); })), false);
-    console.log(header.slice(1).map(function (i) { return i.toString().padStart(2, ' '); }));
     console.log("".concat(header[0].padStart(2, ' '), " ").concat(header.slice(1).map(function (i) { return i.toString().padStart(3, ' '); }).join(' ')));
     // かけ算表の各行を作成
     for (var row = 1; row <= 12; row++) {
