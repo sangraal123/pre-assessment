@@ -1,41 +1,35 @@
-# Multiplication Table Challenge
+# 九九チャレンジ
+このプロジェクトは、学習を向上させ、数学的スキルをテストするためのタイムチャレンジと難易度レベルを提供するインタラクティブな乗算表です。
 
-This project is an interactive multiplication table that offers timed challenges and difficulty levels to enhance learning and test mathematical skills.
+## アプリケーションの実行
+ローカルでアプリケーションを実行するには、以下の手順に従ってください：
 
-## Running the Application
+1. Node.jsとnpmがマシンにインストールされていることを確認します。
+1. リポジトリをローカルマシンにクローンします。
+1. ターミナルでプロジェクトディレクトリに移動します。（推奨ディレクトリはN/multiplication-table-appです）
+1. npm installを実行して必要な依存関係をインストールします。
+1. npm startを実行してアプリケーションを起動します。
+1. Webブラウザを開き、http://localhost:3000 にアクセスしてアプリケーションを表示します。
 
-To run the application locally, follow these steps:
+## プレイ方法
 
-1. Ensure you have `Node.js` and `npm` installed on your machine.
-1. Clone the repository to your local machine.
-1. Navigate to the project directory in your terminal. (Recommended `N/multiplication-table-app` directory)
-1. Run `npm install` to install the required dependencies.
-1. Start the application by running `npm start`.
-1. Open your web browser and go to `http://localhost:3000` to view the application.
+### チャレンジを開始
+- 「チャレンジ開始」ボタンをクリックしてタイムチャレンジを始めます。
+- アプリケーションが「3 x 4 は何ですか？」のような乗算の質問をします。
+- 表の中から正しい答えをクリックします。
+- 答えが正解ならスコアが上がり、新しい質問が提示されます。
+- 答えが不正解なら誤答の音が鳴ります。
 
-## How to Play
+## 機能
 
-### Start a Challenge
+### 難易度レベル
+- チャレンジを開始する前に、難易度レベルを選択できます：簡単（5x5）、中級（8x8）、難しい（12x12）。
+- 選択した難易度に応じて表のサイズが調整されます。
 
-- Click on the "Start Challenge" button to begin a timed multiplication challenge.
-- The application will ask a multiplication question, such as "What is 3 x 4?".
-- Click on the correct answer in the table.
-- If the answer is correct, your score increases, and a new question is presented.
-- If the answer is incorrect, a wrong-answer sound will play.
+### キーボードアクセス
+- Tabキーを使って乗算表をナビゲートします。
+- チャレンジモードでは、Enterキーを押して答えを選択します。
 
-## Features
-
-### Difficulty Levels
-
-- Before starting the challenge, you can select a difficulty level: Easy (5x5), Medium (8x8), or Hard (12x12).
-- The table size will adjust according to the chosen difficulty.
-
-### Keyboard Accessibility
-
-- Navigate the multiplication table using the `Tab` key to move focus.
-- Press `Enter` to select an answer when in challenge mode.
-
-### Sound Effects
-
-- The application features sound effects for correct and incorrect answers to enhance the interactive experience.
-- Make sure your sound is on to hear the effects when selecting answers.
+### 効果音
+- アプリケーションには、正解と不正解の効果音があり、インタラクティブな体験を強化します。
+- 答えを選択する際に効果音を聞くために、サウンドがオンになっていることを確認してください。
