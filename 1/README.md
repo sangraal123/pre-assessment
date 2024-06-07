@@ -20,5 +20,5 @@ source ~/.bashrc
 1. nvm install --lts --latest-npm
 
 ## 備考
-- 通常はnpm initやtsc --initなどで初期化するが、今回は簡単の為行っていない。
+- 通常はnpm initやtsc --initなどで設定ファイルを作成するが、今回は簡単の為行っていない。
 - 通常は.gitignoreでnode_modulesはアップデートしないが、今回は簡単の為行っていない。
