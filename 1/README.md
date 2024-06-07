@@ -4,7 +4,7 @@
 
 NodeJSがインストールされている事
 
-node 1.js
+- node 1.js
 
 ## ビルド手順
 
