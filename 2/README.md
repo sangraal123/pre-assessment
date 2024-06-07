@@ -17,5 +17,5 @@ source ~/.bashrc
 1. npm install http-server
 
 ## 備考
-- 通常はnpm initやtsc --initなどで設定ファイルを作成するが、今回は簡単の為行っていない。
+- 通常はnpm initで設定ファイルを作成するが、今回は簡単の為行っていない。
 - 通常は.gitignoreでnode_modulesはアップデートしないが、今回は簡単の為行っていない。
