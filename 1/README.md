@@ -10,7 +10,7 @@ NodeJSがインストールされている事
 
 1. Typescriptのファイルを作成する
 1. npm install typescript @types/node
-1. ./node_modules/typescript/bin/tsc 1.ts --lib es2017 --lib dom --downlevelIteration
+1. npx tsc 1.ts --lib es2017 --lib dom --downlevelIteration
 
 ## 参考（NodeJSインストール手順）
 

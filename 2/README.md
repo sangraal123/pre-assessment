@@ -4,9 +4,9 @@
 
 NodeJSとhttp-serverモジュールがインストールされている事
 
-1. node ./node_modules/http-server/bin/http-serverでHTTPサーバーを起動
+1. npx http-serverでHTTPサーバーを起動
 1. ブラウザにhttp://localhost:8080 と入力してWebサイトをオープン
-1. ファイルのリストが表示されるのでprint_times_table.htmlをクリック
+1. ファイルのリストが表示されるので2.htmlをクリック
 
 ## 参考（NodeJSとhttp-serverモジュールのインストール手順）
 
