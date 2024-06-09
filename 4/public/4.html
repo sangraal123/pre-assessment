@@ -68,7 +68,7 @@
                     th.textContent = row;
                     th.style.backgroundColor = '#FFA500';
 
-                    for (let col = 1; col <= 12; col++) {
+                    for (let col = 1; col <= data[0]; col++) {
                         let cell = tr.insertCell();
                         cell.textContent = data[1][row - 1][col - 1];
                     }
