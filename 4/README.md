@@ -4,10 +4,10 @@
 
 NodeJSとhttp-serverモジュールがインストールされている事
 
-1. npx http-serverでフロントエンドHTTPサーバーを起動
-1. node 4.jsでAPIバックエンドHTTPサーバーを起動
+1. npx http-serverでフロントエンド用のHTTPサーバーを起動
+1. node 4.jsでバックエンドAPI用のHTTPサーバーを起動
 1. ブラウザにhttp://localhost:8080 と入力してWebサイトをオープン
-1. ファイルのリストが表示されるのでpublic/4.htmlをクリック
+1. ファイルのリストが表示されるので4.htmlをクリック
 
 ## ビルド手順
 
