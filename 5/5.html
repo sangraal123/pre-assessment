@@ -23,7 +23,11 @@
             background-color: #FFFFFF;
             /* All cells have white background by default */
         }
-
+        
+        #multiplication-table td.highlighted {
+                background-color: #FFFF00;
+                /* Yellow background for highlighted cell */
+        }
     </style>
     </head>
 
@@ -64,10 +68,25 @@
                 }
 
                 cell.innerText = cellValue;
+                cell.addEventListener('click', function () {
+                        // Log to the console
+                        console.log(`Clicked number: ${cellValue}`);
+                        highlightCell(cell);
+                });
             }
         }
 
         document.getElementById('table-container').appendChild(table);
+    }
+
+    function highlightCell(selectedCell) {
+            // Remove highlight from all cells
+            document.querySelectorAll('#multiplication-table td').forEach(cell => {
+                cell.classList.remove('highlighted');
+            });
+
+            // Add highlight to the clicked cell
+            selectedCell.classList.add('highlighted');
     }
 
     // Run the function when the window is loaded
