@@ -6,6 +6,13 @@ Expoモジュールがインストールされている事
 
 1. `npx expo start --web`
 
+## ビルド手順
+
+1. `npm install create-expo-app`
+1. `npx create-expo-app ./`
+1. `npm run reset-project`
+
+
 ## 参考（NodeJSとExpoモジュールのインストール手順）
 
 1. `sudo apt install curl`
