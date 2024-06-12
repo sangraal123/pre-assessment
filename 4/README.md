@@ -14,7 +14,7 @@ NodeJSとhttp-serverモジュールがインストールされている事
 1. `npm install typescript @types/node @types/express`
 1. `npx tsc 4.ts --lib es2017 --lib dom --esModuleInterop`
 
-## 参考（NodeJSインストール手順）
+## 参考（NodeJSとhttp-serverモジュールのインストール手順）
 
 1. `sudo apt install curl`
 1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
