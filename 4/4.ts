@@ -19,9 +19,6 @@ app.get('/api/multiplication', (req: Request, res: Response) => {
   res.json([size, data]);
 });
 
-// Serve static files from 'public' directory
-app.use(express.static('public'));
-
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
