@@ -30,8 +30,8 @@ function App() {
   const [confetti, setConfetti] = useState(false);
   let confettiView: Confetti | null = null;
 
-  const correctSound = new Audio.Sound();
-  const wrongSound = new Audio.Sound();
+  const [correctSound, setCorrectSound] = useState(new Audio.Sound());
+  const [wrongSound, setWrongSound] = useState(new Audio.Sound());
 
   useEffect(() => {
     const loadSounds = async () => {
